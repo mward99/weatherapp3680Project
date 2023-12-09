@@ -5,7 +5,7 @@ Python script and react app both need to be running in order to work!!!
 1. Clone repo in VSCode
 
 2. Open a terminal and run: 
- 1. npm i
+   1. npm i
 
 4. open two git bash terminals
 
