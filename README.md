@@ -20,6 +20,6 @@ Python script and react app both need to be running in order to work!!!
       
    2. npm i (wait for packages to install)
 
-   3. npm start
+   3. npm start (it will take a minute or two to launch)
 
 6. React app should start and you can see weather data for Macomb
