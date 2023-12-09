@@ -16,9 +16,9 @@ Python script and react app both need to be running in order to work!!!
 4. After python script is running(KEEP PYTHON SCRIPT RUNNING), go to second bash terminal and
    run:
 
-   1. npm i
+   1. cd weather-app-csi3680
       
-   2. cd weather-app-csi3680
+   2. npm i
 
    3. npm start
 
