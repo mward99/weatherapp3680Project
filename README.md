@@ -9,8 +9,9 @@ Python script and react app both need to be running in order to work!!!
 3. open two git bash terminals
 
 4. First git bash terminal run:
-   cd pythonscript
-   python weatherapp.py
+   1. cd pythonscript
+      
+   2. python weatherapp.py
 
 5. After python script is running(KEEP PYTHON SCRIPT RUNNING), go to second bash terminal and
    run:
