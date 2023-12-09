@@ -4,16 +4,17 @@ Python script and react app both need to be running in order to work!!!
 
 1. Clone repo in VSCode
 
-2. run npm i
+2. Open a terminal and run: 
+ 1. npm i
 
-3. open two git bash terminals
+4. open two git bash terminals
 
-4. First git bash terminal run:
+5. First git bash terminal run:
    1. cd pythonscript
       
    2. python weatherapp.py
 
-5. After python script is running(KEEP PYTHON SCRIPT RUNNING), go to second bash terminal and
+6. After python script is running(KEEP PYTHON SCRIPT RUNNING), go to second bash terminal and
    run:
    1. cd weather-app-csi3680
 
