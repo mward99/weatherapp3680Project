@@ -18,7 +18,7 @@ Python script and react app both need to be running in order to work!!!
 
    1. cd weather-app-csi3680
       
-   2. npm i
+   2. npm i (wait for packages to install)
 
    3. npm start
 
