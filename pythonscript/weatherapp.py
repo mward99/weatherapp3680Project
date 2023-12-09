@@ -1,23 +1,10 @@
-# Python Based: Requirement 1
-
-# Practical Usage: weather app is practical for anyone who wants to know the weather
-
-
-
-
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from flask_cors import CORS
 import requests
-import json
 
 app = Flask(__name__)
 CORS(app)
 
-
-# Defines and Use at Least Two Functions:
-
-
-# Function 1: 
 def get_weather_data(api_key, city, state, country):
     base_url = "http://api.weatherapi.com/v1/current.json" 
     location = f"{city},{state},{country}"
@@ -39,25 +26,20 @@ def get_weather_data(api_key, city, state, country):
         print(f"Request Error: {err}")
     return None
 
-
-# This is for the react app so we can see it in the UI
-# Importing third-Party Library/Package, this is being used in the react app which is a third-part JS library 
 @app.route('/get_weather_data', methods=['GET'])
-
-# Function 2: 
 def serve_weather_data():
     api_key = "848078c6e4754766ad811114230912"
-    city_name = "Macomb"
-    state_name = "Michigan"
+    
+    city_name = request.args.get('city')
+    state_name = request.args.get('state')
     country_code = "US"
-# Use Exceptions for File Operations: using try and catch block
+
     try:
         weather_data = get_weather_data(api_key, city_name, state_name, country_code)
         print(f"Weather Data: {weather_data}")
         return jsonify(weather_data)
     except Exception as e:
         print(f"Error serving weather data: {e}")
-        # writing to a json file
         return jsonify({"error": "Internal Server Error"}), 500
 
 if __name__ == '__main__':

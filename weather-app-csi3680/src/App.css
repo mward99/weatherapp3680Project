@@ -1,20 +1,51 @@
 .weather-container {
-  font-family: Arial, sans-serif;
   max-width: 600px;
-  margin: 20px auto;
+  margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  color: #333;
+.weather-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.current-conditions,
-.location-info {
+.weather-form label {
+  font-weight: bold;
+}
+
+.weather-form input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.weather-form button {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weather-info {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.current-conditions, .location-info {
   margin-top: 20px;
+}
+
+.current-conditions h3, .location-info h3 {
+  color: #333;
+  margin-bottom: 10px;
 }
 
 ul {
@@ -22,14 +53,27 @@ ul {
   padding: 0;
 }
 
-li {
-  margin-bottom: 8px;
+ul li {
+  margin-bottom: 10px;
 }
 
-strong {
-  color: #007bff;
+ul li strong {
+  margin-right: 5px;
+  color: #555;
 }
 
-p {
+ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.leaflet-container {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.loading {
+  font-size: 18px;
+  font-weight: bold;
   color: #555;
 }
